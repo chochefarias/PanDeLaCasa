@@ -1,0 +1,606 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6{
+	margin: 50px 0;
+}
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   */
+/* 
+
+Igual o menor a 880
+
+*/
+
+@media(max-width: 880px){
+	#div1{
+		background-image: url(../img/backgroundbread_contacto.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: -10px;
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+		margin-top: 0;
+		padding: 25px 0;
+	}
+	#div1 > #menu-header{
+		display: none;
+	}
+	
+	/*Menu Responsive Styles*/
+	#div1 > #menu-header-responsive{
+		width: 100%;
+		position: absolute;
+		margin-top: 10px;
+	}
+	#div1 > #menu-header-responsive > a {
+		position: relative;
+		right: -30%;
+	}
+	#div1 > #menu-header-responsive > a > img{
+		width: 60px;
+		height: 60px;
+		background-color: #633411;
+		border-radius: 25px;
+	}
+	#div1 > #menu-header-responsive > ul{
+		display: none;
+		background-color: #633411;
+		margin-top: -5px;
+	}
+
+	#div1 > #menu-header-responsive > ul > li{
+		list-style-type: none;
+		width: 100%;
+		padding: 25px 0;
+		font-size: large;
+		font-weight: 600;
+
+	}
+	#div1 > #menu-header-responsive > ul > li > a{
+		text-decoration: none;
+		color: white;
+
+	}
+	#div1 > #logo-header{
+		width: 100%;
+		height: auto;
+		display: flex;
+		margin-left: 25px;
+	}
+
+	#div1 > #logo-header > a > img{
+		width: 80px;
+		height: 80px;
+		min-width: 60px;
+		min-height: 60px;
+	}
+	#div1 > #titulo{
+		width: 100%;
+		border-radius: 50px;
+		margin: 25px 0;
+	}
+	#div1 > #titulo > h1{
+		color: #F5F5F5;
+		margin: 10px 0;
+		font-weight: 400;
+		font-size: xxx-large;
+		background-color: #63351186;
+	}
+	#div1 > #titulo > h2{
+		color: #F5F5F5;
+		margin: 10px 0;
+		font-weight: 400;
+		font-size: x-large;
+		background-color: #63351186;
+	}
+
+
+	/* - 	-	-	DIV 2	-	-	-*/
+	/*	 -		-		-	Formulario 	-		-		-	*/
+	/* Importación de fuentes de google fonts */ 
+	@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+	#div2{
+		height: auto; 
+	  	font-family: 'Noto Sans', sans-serif;
+	}
+	.contact_form{  
+	  width: 80%; 
+	  height: auto;
+	  margin: 80px auto;
+	  border-radius: 10px;  
+	  background-color: #633411; 
+	  padding: 30px 20px;
+	}
+
+	.formulario{
+		width: 90%;
+		margin: auto;
+	}
+	.form-action{
+		width: 100%;
+	}
+	input{ 
+	  width: 100%; 
+	  height: 40px; 
+	  border-radius: 5px;  
+	  border-style: solid; 
+	  border-width: 1px; 
+	  border-color: #F5F5F5; 
+	  margin-top: 10px;  
+	  padding-left: 10px;
+	  margin-bottom: 20px; 
+	}
+
+
+	textarea{
+	  background-color: #fbfbfb; 
+	  width: 100%; 
+	  height: 150px; 
+	  border-radius: 5px;  
+	  border-style: solid; 
+	  border-width: 1px; 
+	  border-color: #F5F5F5; 
+	  margin-top: 10px;  
+	  padding-left: 10px;
+	  margin-bottom: 20px; 
+	  padding-top: 15px; 
+	}
+
+
+	label{
+		width: 100%;
+	  	display: block; 
+	  	float: center;  
+	}
+
+
+	button{	
+  		height: 45px; 
+  		padding-left: 5px;
+  		padding-right: 5px;   
+  		margin-bottom: 20px; 
+  		margin-top: 10px;   
+  		text-transform: uppercase;
+  		background-color: #ff8a31;  
+  		border-style: solid; 
+  		border-radius: 10px;  
+  		width: 100%;   
+  		cursor: pointer;
+	}
+
+
+	button > p{	
+  		color: #633411; 
+  		font-weight: 600;
+	}
+
+
+	span{	
+  		color: #ff8a31; 
+	}
+
+
+	.aviso{	
+  		font-size: 13px;  
+  		color: #ff8a31;  
+	}
+
+
+	h1{
+	  font-size: 39px;  
+	  text-align: letf; 
+	  padding-bottom: 20px; 
+	  color: #F5F5F5;
+	}
+
+
+	h3{
+  		font-size: medium; 
+  		padding-bottom: 30px;
+  		color: #F5F5F5;   
+	}
+
+
+	p{
+		width: 100%;
+		font-size: 14px; 
+ 	 	color: #F5F5F5; 
+	}
+
+
+	::-webkit-input-placeholder {
+	 color: #a8a8a8;
+	}
+
+
+	::-webkit-textarea-placeholder {
+ 		color: #a8a8a8;
+	}
+
+
+	.formulario > input:focus{
+	  outline:0;
+  		border: 1px solid #97d848;
+	}
+
+
+	.formulario > textarea:focus{
+ 	 	outline:0;
+ 	 	border: 1px solid #97d848;
+	}
+
+	/* 	-		-		-		DIV 3  	- 		-		-	 */
+	#div3{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		height: auto;
+		background-color:#633411;
+		margin-bottom: 0;
+	}
+
+	#div3 > #logo-footer > img{
+		width: 200px;
+		height: 200px;
+	}
+
+	#div3 > #menu-footer{
+		display: flex;
+		width: 100%;
+		height: max-content;
+		padding: 15px;
+	}
+
+	#div3 > #menu-footer > ul{
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		font-size: large;
+		margin: auto;
+	}
+	#div3 > #menu-footer > ul > li#logo-footer{
+		height: auto;
+		text-align: center;
+	}
+	#div3 > #menu-footer > ul > li#logo-footer > a > img{
+		width: 200px;
+		height: 200px;
+	}
+	#div3 > #menu-footer > ul > li{
+		list-style-type: none;
+		margin: 25px auto;
+		color: #F5F5F5;
+		width: 100%;
+		text-align: center;
+	}
+	#div3 > #menu-footer > ul > li > a{
+		text-decoration: none;
+		color: #F5F5F5;
+	}
+
+}
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   */
+/* 
+
+Igual o mayor a 880
+
+*/
+@media(min-width: 880px){
+	/*  - 		-		- 	DIV 1	-	-	- 	*/
+	#div1{
+		background-image: url(../img/backgroundbread_contacto.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: -10px;
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+		margin-top: 0;
+		padding: 25px 0;
+	}
+	#div1 > #menu-header{
+		display: flex;
+		width: 80%;
+		height: 80px;
+		margin: 25px 0;
+		background-color: #F5F5F5;
+		border-radius: 25px;
+	}
+
+	#div1 > #menu-header > ul{
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		font-size: 28px;
+	
+	}
+	#div1 > #menu-header > ul > li{
+		list-style-type: none;
+		margin: auto;
+		color: #633411;
+		border-radius: 25px;
+	}
+	#div1 > #menu-header > ul > li:hover{
+		list-style-type: none;
+		background-color: #633411;
+		margin: auto;
+		padding: 24px 0;
+	}
+	#div1 > #menu-header > ul > li > a{
+		text-decoration: none;
+		color: #633411;
+		padding: 50px;
+	}
+	#div1 > #menu-header > ul > li > a:hover{
+		text-decoration: none;
+		color: #F5F5F5;
+	}
+	#div1 > #menu-header-responsive{/*Ocultar menu responsive*/
+		display: none;
+	}
+	#div1 > #logo-header{
+		width: 80%;
+		height: auto;
+		padding: 50px;
+		margin: 25px;
+		
+	}
+	#div1 > #logo-header > a > img{
+		width: 200px;
+		height: 200px;
+	}
+
+	#div1 > #titulo{
+		width: 80%;
+		border-radius: 50px;
+		margin: 25px 0;
+	}
+	#div1 > #titulo > h1{
+		color: #F5F5F5;
+		margin: 10px 0;
+		font-weight: 400;
+		font-size: xxx-large;
+		background-color: #63351186;
+	}
+	#div1 > #titulo > h2{
+		color: #F5F5F5;
+		margin: 10px 0;
+		font-weight: 400;
+		font-size: x-large;
+		background-color: #63351186;
+	}
+
+	/* - 	-	-	DIV 2	-	-	-*/
+	/*	 -		-		-	Formulario 	-		-		-	*/
+	/* Importación de fuentes de google fonts */ 
+	@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+	#div2{
+		height: auto; 
+		font-family: 'Noto Sans', sans-serif;
+	}
+	.contact_form{  
+	width: 460px; 
+	height: auto;
+	margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+	background-color: #633411; 
+	padding-left: 30px; 
+	}
+
+
+	input{ 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #F5F5F5; 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+	}
+
+
+	textarea{
+	background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #F5F5F5; 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+	padding-top: 15px; 
+	}
+
+
+	label{
+	display: block; 
+	float: center;  
+	}
+
+
+	button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px;   
+	margin-bottom: 20px; 
+	margin-top: 10px;   
+	text-transform: uppercase;
+	background-color: #ff8a31;  
+	border-style: solid; 
+	border-radius: 10px;  
+	width: 405px;   
+	cursor: pointer;
+	}
+	button:hover{
+		height: 45px; 
+		padding-left: 5px;
+		padding-right: 5px;   
+		margin-bottom: 20px; 
+		margin-top: 10px;   
+		text-transform: uppercase;
+		background-color: #F5F5F5;  
+		border-style: solid; 
+		border-radius: 10px;  
+		width: 405px;   
+		cursor: pointer;
+		color: #ff8a31;
+		}
+
+	button > p{
+		color: #633411; 
+		font-weight: 600;
+	}
+	button > p:hover{
+		color: #ff8a31;
+		font-weight: 600;
+	}
+
+
+	span{
+	color: #ff8a31; 
+	}
+
+
+	.aviso{
+	font-size: 13px;  
+	color: #ff8a31;  
+	}
+
+
+	h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #F5F5F5;
+	}
+
+
+	h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #F5F5F5;   
+	}
+
+
+	p{
+	font-size: 14px; 
+	color: #F5F5F5; 
+	}
+
+
+	::-webkit-input-placeholder {
+	color: #a8a8a8;
+	}
+
+
+	::-webkit-textarea-placeholder {
+	color: #a8a8a8;
+	}
+
+
+	.formulario > input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+	}
+
+
+	.formulario > textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+	}
+
+	/* 	-		-		-		DIV 3  	- 		-		-	 */
+	#div3{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		height: auto;
+		background-color:#633411;
+		margin-bottom: 0;
+	}
+
+	#div3 > #logo-footer > img{
+		width: 200px;
+		height: 200px;
+	}
+
+	#div3 > #menu-footer{
+		display: flex;
+		width: 100%;
+		height: max-content;
+		padding: 15px;
+	}
+
+	#div3 > #menu-footer > ul{
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		font-size: 26px;
+		margin: auto;
+	}
+	#div3 > #menu-footer > ul > li#logo-footer{
+		height: auto;
+		text-align: center;
+		
+	}
+	#div3 > #menu-footer > ul > li#logo-footer > a > img{
+		width: 200px;
+		height: 200px;
+	}
+
+	#div3 > #menu-footer > ul > li{
+		list-style-type: none;
+		margin: auto;
+		color: #F5F5F5;
+	}
+	#div3 > #menu-footer > ul > li:nth-child(1):hover{
+		background-color: #633411;
+		list-style-type: none;
+		padding: 0;
+	}
+	#div3 > #menu-footer > ul > li:hover{
+		list-style-type: none;
+		background-color: #F5F5F5;
+		color: #633411;
+		padding: 24px 0;
+	}
+	#div3 > #menu-footer > ul > li > a{
+		text-decoration: none;
+		color: #F5F5F5;
+	}
+	#div3 > #menu-footer > ul > li > a:hover{
+		text-decoration: none;
+		color: #633411;
+	}
+}
